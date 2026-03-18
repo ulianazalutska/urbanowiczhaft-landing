@@ -474,3 +474,128 @@ animation-delay:2.4s;
     padding: 30px 10px;
   }
 }
+
+/* video {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+video.loaded {
+  opacity: 1;
+} */
+
+
+/* LOADER */
+.loader {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, #1a1a1a, #000);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  transition: opacity 0.8s ease;
+}
+
+.loader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.logo {
+  font-size: 48px;
+  letter-spacing: 4px;
+  font-weight: 500;
+
+  /* złoty kolor */
+  color: #d4af37;
+
+  /* start animacji */
+  opacity: 0;
+  transform: translateY(30px) scale(0.98);
+
+  /* glow */
+  text-shadow:
+    0 0 8px rgba(212,175,55,0.2),
+    0 0 20px rgba(212,175,55,0.15);
+
+  /* animacja */
+  transition:
+    opacity 1s ease,
+    transform 1s cubic-bezier(0.22,1,0.36,1),
+    text-shadow 1.2s ease;
+}
+
+/* aktywacja */
+.logo.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+
+  text-shadow:
+    0 0 16px rgba(212,175,55,0.4),
+    0 0 40px rgba(212,175,55,0.25);
+}
+
+
+/* złota linia */
+.line {
+  width: 0;
+  height: 2px;
+  margin-top: 20px;
+  background: linear-gradient(90deg, transparent, gold, transparent);
+  animation: loadLine 1.2s ease forwards;
+}
+
+@keyframes loadLine {
+  to {
+    width: 200px;
+  }
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg,
+.hero-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* obraz startowy */
+.hero-bg {
+  filter: blur(10px) brightness(0.6);
+  transform: scale(1.05);
+  transition: all 1.5s ease;
+}
+
+/* video cinematic */
+.hero-video {
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+/* overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+
+/* stan po załadowaniu */
+.hero.loaded .hero-video {
+  opacity: 1;
+  /* transform: scale(1); */
+}
+
+.hero.loaded .hero-bg {
+  filter: blur(0) brightness(0.9);
+  transform: scale(1);
+}

@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Urbanowicz Haft">
-    <meta property="og:site_name" content="Urbanowicz Haft">
-    <meta property="og:locale" content="pl_PL">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Urbanowicz Haft">
-    <meta name="twitter:description" content="Producent ornatów liturgicznych i haftów kościelnych">
-    <meta name="twitter:image" content="https://urbanowiczhaft.pl/img/logo.png">
+    <meta name="author" content="Urbanowicz Haft" />
+    <meta property="og:site_name" content="Urbanowicz Haft" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Urbanowicz Haft" />
+    <meta
+      name="twitter:description"
+      content="Producent ornatów liturgicznych i haftów kościelnych"
+    />
+    <meta name="twitter:image" content="https://urbanowiczhaft.pl/img/logo.png" />
     <link rel="canonical" href="https://urbanowiczhaft.pl" />
     <link rel="alternate" hreflang="pl" href="https://pl.urbanowiczhaft.pl" />
     <link rel="alternate" hreflang="en" href="https://en.urbanowiczhaft.pl" />
@@ -35,61 +38,59 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/main.js" defer></script>
     <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
           {
-          "@context": "https://schema.org",
-          "@graph":[
-          
-          {
-          "@type":"Organization",
-          "name":"Urbanowicz Haft",
-          "url":"https://urbanowiczhaft.pl",
-          "logo":"https://urbanowiczhaft.pl/img/logo.png",
-          "sameAs":[
-          "https://www.instagram.com/urbanowiczhaft/",
-          "https://www.facebook.com/urbanowiczhaftwroclaw",
-          "https://pl.pinterest.com/urbanowiczhaft_pl/",
-          "https://www.youtube.com/@urbanowiczhaft4126"
-          ]
+            "@type": "Organization",
+            "name": "Urbanowicz Haft",
+            "url": "https://urbanowiczhaft.pl",
+            "logo": "https://urbanowiczhaft.pl/img/logo.png",
+            "sameAs": [
+              "https://www.instagram.com/urbanowiczhaft/",
+              "https://www.facebook.com/urbanowiczhaftwroclaw",
+              "https://pl.pinterest.com/urbanowiczhaft_pl/",
+              "https://www.youtube.com/@urbanowiczhaft4126"
+            ]
           },
 
           {
-          "@type":"LocalBusiness",
-          "name":"Urbanowicz Haft",
-          "image":"https://urbanowiczhaft.pl/img/logo.png",
-          "url":"https://urbanowiczhaft.pl",
-          "telephone":"+48 512 62 62 36",
-          
-          "address":{
-          "@type":"PostalAddress",
-          "streetAddress":"ul. Stabłowicka 123",
-          "addressLocality":"Wrocław",
-          "postalCode":"54-062",
-          "addressCountry":"PL"
-          },
+            "@type": "LocalBusiness",
+            "name": "Urbanowicz Haft",
+            "image": "https://urbanowiczhaft.pl/img/logo.png",
+            "url": "https://urbanowiczhaft.pl",
+            "telephone": "+48 512 62 62 36",
 
-          "areaServed":"Europe"
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "ul. Stabłowicka 123",
+              "addressLocality": "Wrocław",
+              "postalCode": "54-062",
+              "addressCountry": "PL"
+            },
+
+            "areaServed": "Europe"
           },
 
           {
-          "@type":"WebSite",
-          "name":"Urbanowicz Haft",
-          "url":"https://urbanowiczhaft.pl",
-          "inLanguage":"pl",
-          "potentialAction":{
-          "@type":"SearchAction",
-          "target":"https://pl.urbanowiczhaft.pl/?s={search_term_string}",
-          "query-input":"required name=search_term_string"
+            "@type": "WebSite",
+            "name": "Urbanowicz Haft",
+            "url": "https://urbanowiczhaft.pl",
+            "inLanguage": "pl",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://pl.urbanowiczhaft.pl/?s={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
           }
-          }
-
-          ]
-          }
-     </script>
+        ]
+      }
+    </script>
   </head>
   <body>
     <header>
       <div class="header-container">
-        <div class="logo"></div>
+        <div class="logo2"></div>
 
         <nav class="desktop-nav">
           <a href="https://pl.urbanowiczhaft.pl">Sklep Polski</a>
@@ -117,12 +118,25 @@
       <a href="#">Magasin Français</a>
     </div>
 
+    <div class="loader">
+  <div class="logo">URBANOWICZ</div>
+  <div class="line"></div>
+</div>
     <section class="hero">
-      <video autoplay muted loop playsinline preload="metadata" class="hero-video">
-        <source src="filmik/v-mg-2-mb.mp4" type="video/mp4" />
-      </video>
+      <!-- <video autoplay muted loop playsinline preload="auto" class="hero-video">
 
-      <div class="overlay"></div>
+        <source src="filmik/v-mg-2-mb.mp4" type="video/mp4" />
+      </video> -->
+
+
+ <img src="img/hero.png" class="hero-bg">
+
+  <video class="hero-video" muted loop playsinline preload="none"></video>
+
+  <div class="overlay"></div>
+
+
+
 
       <div class="hero-content">
         <img
@@ -143,7 +157,7 @@
           </a>
 
           <a target="_blank" href="https://en.urbanowiczhaft.pl">
-            <img src="img/united-kingdom.png" alt="English shop Urbanowicz Haft"/>
+            <img src="img/united-kingdom.png" alt="English shop Urbanowicz Haft" />
             <span>English</span>
           </a>
 
@@ -151,7 +165,6 @@
             <img src="img/italy.png" alt="Negozio Italiano Urbanowicz Haft" />
             <span>Italiano</span>
             <small>in preparazione</small>
-            
           </a>
 
           <a target="_blank" href="#">
