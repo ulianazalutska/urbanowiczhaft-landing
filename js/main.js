@@ -52,3 +52,6 @@ function showLogo() {
 // po ukryciu loadera:
 setTimeout(showLogo, 200);
 
+video.addEventListener("loadeddata", () => {
+  video.currentTime = 0.5; // start od 0.5 sekundy
+});
